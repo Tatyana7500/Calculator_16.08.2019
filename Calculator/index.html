@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h2>Simple Calculator</h2>
+    </header>
+    <section class="calculator">
+            <div class="calculator__row-display">
+                <input id="textBox" value="0" name="textBox" type="text" class="calculator__textBox" maxlength="8" onkeyup="validate(this)"/>
+            </div>
+            <div class="calculator__row-left">
+                <button id="btnAC" onclick="btnACPress()" class="calculator__btn" value="AC">AC</button>
+            </div>
+            <div class="calculator__row">
+                <button id="btn7" onclick="numberBtnPress(7)" class="calculator__btn">7</button>
+                <button id="btn8" onclick="numberBtnPress(8)" class="calculator__btn">8</button>
+                <button id="btn9" onclick="numberBtnPress(9)" class="calculator__btn">9</button>
+                <button id="btnDel" onclick="operatorBtnPress('/')" class="calculator__btn">/</button>
+            </div>
+            <div class="calculator__row">
+                <button id="btn4" onclick="numberBtnPress(4)" class="calculator__btn">4</button>
+                <button id="btn5" onclick="numberBtnPress(5)" class="calculator__btn">5</button>
+                <button id="btn6" onclick="numberBtnPress(6)" class="calculator__btn">6</button>
+                <button id="btnMult" onclick="operatorBtnPress('*')" class="calculator__btn">*</button>
+            </div>
+            <div class="calculator__row">
+                <button id="btn1" onclick="numberBtnPress(1)" class="calculator__btn">1</button>
+                <button id="btn2" onclick="numberBtnPress(2)" class="calculator__btn">2</button>
+                <button id="btn3" onclick="numberBtnPress(3)" class="calculator__btn">3</button>
+                <button id="btnMinus" onclick="operatorBtnPress('-')" class="calculator__btn">-</button>
+            </div>
+            <div class="calculator__row">
+                <button id="btn0" onclick="numberBtnPress(0)" class="calculator__btn">0</button>
+                <button id="btnPoint" onclick="btnPointPress()" class="calculator__btn">.</button>
+                <button id="btnEqually" onclick="operatorBtnPress('=')" class="calculator__btn">=</button>
+                <button id="btnPlus" onclick="operatorBtnPress('+')" class="calculator__btn">+</button>
+            </div>
+    </section>
+</div>
+<script src="model/model.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
